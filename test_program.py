@@ -7,7 +7,6 @@ def test_encrypt_message(message, shift):
     url = 'http://localhost:5000/encrypt_message'
     headers = {'Content-Type': 'application/json'}
 
-    # Data to send
     data = {
         'message': message,
         'shift': shift
@@ -20,7 +19,10 @@ def test_encrypt_message(message, shift):
         print(f"Encrypted Message: {result['encrypted_message']}")
     else:
         print(f"Error: {response.status_code}")
-        print(response.json())
+        try:
+            print(response.json())
+        except json.JSONDecodeError:
+            print(response.text)
 
 
 if __name__ == '__main__':
