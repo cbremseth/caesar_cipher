@@ -52,5 +52,13 @@ After making a request to the microservice, you will receive a JSON response con
 
 ![uml diagram of functionality](uml_diagram.png)
 
+# Mitigation Plan/Communication Contract
 
+A. I implemented the encryption service for Khaled
+B. The microservice is complete.
+C. N/A
+D. The code is available on github here: https://github.com/cbremseth/caesar_cipher 
+E. I'm available for support via DM on Discord, expect a couple hour response time but it may be sooner.
+F. I'd like to know as soon as possible if there's an issue using the microservice, Khaled said that he was able to get it to work already but I can make fixes if needed.
+G. The only thing I am worried about is making sure that the ascii shift math is correct and that things are being encrypted correctly. I didn't have a decrypter to use so I had to do the calculations by hand and I think it's correct, but I've been wrong before.
 
