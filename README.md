@@ -18,7 +18,7 @@ Run the Flask application:
 
 `python encipher.py`
 
-By default the service runs on port 5000.
+By default the service runs on port 5001.
 
 # Requesting and Receiving Data
 
