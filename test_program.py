@@ -4,7 +4,7 @@ import argparse
 
 
 def test_encrypt_message(message, shift):
-    url = 'http://localhost:5000/encrypt_message'
+    url = 'http://localhost:5001/encrypt_message'
     headers = {'Content-Type': 'application/json'}
 
     data = {
