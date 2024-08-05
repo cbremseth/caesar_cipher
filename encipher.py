@@ -22,7 +22,9 @@ def caesar_cipher(text, shift):
 
 @app.route('/encrypt_message', methods=['POST'])
 def encrypt_message():
+
     data = request.json
+    app.logger.debug(f"Received data: {data}")
     if not data or 'message' not in data or 'shift' not in data:
         return jsonify({'error': 'Invalid input. Please provide a valid string message and shift value.'}), 400
 
@@ -38,4 +40,4 @@ def encrypt_message():
 
 
 if __name__ == '__main__':
-    app.run(port=5000)
+    app.run(port=5001)
