@@ -22,7 +22,7 @@ By default the service runs on port 5000.
 
 # Requesting and Receiving Data
 
-You can request data from the microservice by making an HTTP POST request to the /encrypt_message endpoint. The request should include a JSON body with the message to be encrypted and the shift value.
+You can request data from the microservice by making an HTTP POST request to the /encrypt_message endpoint. The request should include a JSON body with the message to be encrypted and the shift value. Note: The message to by encrypted should be a string and the shift number should be a positive or negative integer.
 
 ```python
 import requests
@@ -50,7 +50,7 @@ After making a request to the microservice, you will receive a JSON response con
 
 # UML Diagram
 
-
+![uml diagram of functionality](uml_diagram.png)
 
 
 
